@@ -31,7 +31,7 @@
   margin: 0 auto;
 }
 
-body {
+#cover:body {
   background: url(https://assets3.thrillist.com/v1/image/2718722/size/gn-gift_guide_variable_c_2x.jpg);
 }
 
@@ -45,4 +45,30 @@ button {
   font-size: 1.5em;
   height: 8vh;
   width: 5vw;
+}
+
+.shopContainer {
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.shopImg {
+  width: 400px;
+  height: auto;
+}
+
+.yelpWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#stars {
+  height: 25px;
+}
+
+#logo {
+  width: 100px;
 }
