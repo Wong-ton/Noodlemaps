@@ -4,13 +4,16 @@ import axios from 'axios';
 import Map from '../Map';
 import Results from '../Results';
 
+const mapApiKey = process.env.REACT_APP_MAP_API_KEY;
+
 class Home extends Component {
 
     state = {
       loading: null,
       message: null,
       shops: [],
-      location: null
+      centerCoords: {},
+      mapHidden: true
     }
 
     onChange = (event) => {
@@ -24,19 +27,24 @@ class Home extends Component {
       this.getYelp();
     }
 
-
     getYelp = () => {
         this.setState({
           loading: true
         })
+        axios.get(`${`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.location}&key=${mapApiKey}`}`)
+          .then((res) => {
+            this.setState({
+              centerCoords: res.data.results[0].geometry.location
+            })
+          })
         axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=${this.state.location}&term=noodles`, {
             headers: {
-                Authorization: `Bearer ${process.env.REACT_APP_YELP_API_KEY}`,
+                Authorization: `Bearer ${process.env.REACT_APP_YELP_API_KEY}`
             }
         })
         .then((res) => {
             console.log(res.data.businesses)
-            this.setState({ shops: res.data.businesses, loading: false })
+            this.setState({ shops: res.data.businesses, loading: false, mapHidden: false })
         })
         .catch((err) => {
             this.setState({ error: "Sorry, we couldn't find any shops around this area. Please enter another location and try again", loading: false})
@@ -53,14 +61,13 @@ class Home extends Component {
               placeholder="Enter Location"
               onChange={this.onChange}
             />
-            <button type="submit">Go</button>
+            <button type="submit" disabled={!this.state.location}>Send Noods</button>
           </form>
-
-          {/* { this.state.shops = [] ? null : <Map shops={this.state.shops}/> } */}
-
+          <div className="map">
+            <Map shops={this.state.shops} coordinates={this.state.centerCoords} hidden={this.state.mapHidden}/>  
+          </div>
           <div className="content">
-            <Map shops={this.state.shops} location={this.state.location}/>  
-            <Results shops={this.state.shops} location={this.state.location}/>
+            <Results shops={this.state.shops}/>
           </div>
         </div>
       )

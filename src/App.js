@@ -12,13 +12,10 @@ class App extends Component {
 
   render(){
     return (
-      <div id="cover">
+      <div>
         <h1>NoodleMAPS</h1>
         <br/>
         <Home/>
-        <div className="content">
-          Send noods
-        </div>
       </div>
     );
   }

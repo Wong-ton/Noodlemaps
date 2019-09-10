@@ -17,14 +17,15 @@
   color: #61dafb;
 }
 
-#map {
+#map, .map {
   height: 50vh;
   width: 100vw;
+  position: sticky;
+  top: 0;
 }
 
 .content {
   background: rgba(255, 255, 255, 0.8);
-  opacity: .8;
   width: 600px;
   height: 50vh;
   text-align: center;
@@ -33,6 +34,10 @@
 
 #cover:body {
   background: url(https://assets3.thrillist.com/v1/image/2718722/size/gn-gift_guide_variable_c_2x.jpg);
+}
+
+form {
+  text-align: center;
 }
 
 input {
@@ -44,7 +49,7 @@ input {
 button {
   font-size: 1.5em;
   height: 8vh;
-  width: 5vw;
+  width: auto;
 }
 
 .shopContainer {

@@ -7,8 +7,8 @@ class Map extends Component {
 
     const WrappedMap = withScriptjs(withGoogleMap(props => (
       <GoogleMap
-        defaultCenter={{ lat: 34.052235, lng: -118.243683 }}
-        defaultZoom={ 10 }
+        defaultCenter={{ lat: this.props.coordinates.lat, lng: this.props.coordinates.lng }}
+        defaultZoom={ 13 }
       >
         {
           props.shops.map((shop, i) => {
@@ -24,11 +24,15 @@ class Map extends Component {
             )
           })
         }
+ 
       </GoogleMap>
     )));
 
     return (
-      <div id="map">
+      <div 
+        id="map"
+        style={this.props.hidden ? {display: 'none'}: {display: 'block'} }
+      >
         <WrappedMap
           googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${apiKey}`}
           loadingElement={<div style={{ height: "100%" }} />} 
