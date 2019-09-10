@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import axios from 'axios';
-import { Marker, InfoWindow } from 'react-google-maps'
 import Map from '../Map';
 import Results from '../Results';
 
@@ -11,6 +10,7 @@ class Home extends Component {
       loading: null,
       message: null,
       shops: [],
+      location: null
     }
 
     onChange = (event) => {
@@ -29,7 +29,7 @@ class Home extends Component {
         this.setState({
           loading: true
         })
-        axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=${this.state.search}&term=noodles`, {
+        axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=${this.state.location}&term=noodles`, {
             headers: {
                 Authorization: `Bearer ${process.env.REACT_APP_YELP_API_KEY}`,
             }
@@ -49,26 +49,19 @@ class Home extends Component {
           <form onSubmit={this.onSubmit}>
             <input
               type="text"
-              name="search"
+              name="location"
               placeholder="Enter Location"
               onChange={this.onChange}
             />
             <button type="submit">Go</button>
           </form>
-            <Map shops={this.state.shops}/>
-            <Results shops={this.state.shops}/>
 
-          {/* { this.state.shops.map((shop, i) => {
-            return (
-              <Marker 
-                key={i} 
-                position={{ lat: shop.coordinates.latitude, 
-                            lng: shop.coordinates.longitude 
-                          }}
-              />
-            )
-          })} */}
-      
+          {/* { this.state.shops = [] ? null : <Map shops={this.state.shops}/> } */}
+
+          <div className="content">
+            <Map shops={this.state.shops} location={this.state.location}/>  
+            <Results shops={this.state.shops} location={this.state.location}/>
+          </div>
         </div>
       )
     }
