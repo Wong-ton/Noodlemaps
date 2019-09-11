@@ -14,3 +14,4 @@ NoodleMaps is an application that searches for noodle restaurants in any given a
 
 ## Contributors
 - [Jason Wong](https://www.github.com/wong-ton)
+- [Thrillist](https://www.thrillist.com) - for the background image
