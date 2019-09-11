@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import Home from './Home';
+import Home from './Old';
 import axios from 'axios';
 import Results from './Results';
 
