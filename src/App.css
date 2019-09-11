@@ -57,7 +57,7 @@ input {
   box-shadow: 0 3px 6px 0 black;
 }
 
-button {
+#searchButton {
   font-size: 1.5em;
   height: 8vh;
   width: auto;

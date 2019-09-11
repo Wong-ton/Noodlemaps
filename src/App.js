@@ -69,9 +69,10 @@ class App extends Component {
                   placeholder="Enter Address, City, or General Location"
                   onChange={this.onChange}
                 />
-                <button type="submit" disabled={!this.state.location}>Send Noods</button>
+                <button type="submit" id="searchButton" disabled={!this.state.location}>Send Noods</button>
               </form>
             </div>
+            {/* These line breaks are for styling and map positioning */}
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
               {
                 this.state.hideCover ?

@@ -9,7 +9,7 @@ const Results = ({shops, coordinates, hidden}) => {
           <div className="map">
             <Map shops={shops} coordinates={coordinates} hidden={hidden}/>  
           </div>
-          <div className="content">
+          <div>
             <Shops shops={shops}/>
           </div>
         </div>
