@@ -17,51 +17,71 @@
   color: #61dafb;
 }
 
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+  font-weight: 900;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+
 #map, .map {
-  height: 50vh;
-  width: 100vw;
   position: sticky;
   top: 0;
+  height: 45vh;
+  width: 100vw;
 }
 
-.content {
-  background: rgba(255, 255, 255, 0.8);
-  width: 600px;
-  height: 50vh;
+#cover {
   text-align: center;
-  margin: 0 auto;
-}
-
-#cover:body {
+  width: 100vw;
+  height: 100vh;
   background: url(https://assets3.thrillist.com/v1/image/2718722/size/gn-gift_guide_variable_c_2x.jpg);
+  display: flex;
+  flex-direction: column;
 }
 
-form {
-  text-align: center;
+#cover-container {
+  margin: 250px auto;
+}
+
+#searchInput {
+  align-content: center;
+  box-shadow: 0 3px 3px 0 black;
 }
 
 input {
   font-size: 1.5em;
   height: 7vh;
-  width: 20vw;
+  width: 50vw;
+  box-shadow: 0 3px 6px 0 black;
 }
 
 button {
   font-size: 1.5em;
   height: 8vh;
   width: auto;
+  box-shadow: 0 3px 6px 0 black;
 }
 
-.shopContainer {
+.flexContainer {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.shopContainer, .content {
   padding: 15px;
-  margin: 15px;
+  margin: 15px auto;
   border: 1px solid black;
   border-radius: 15px;
+  box-shadow: 0 3px 6px 0 black;
 } 
 
 .shopImg {
-  width: 400px;
+  width: 350px;
   height: auto;
+  box-shadow: 0 3px 6px 0 black;
 }
 
 .yelpWrapper {
@@ -74,6 +94,15 @@ button {
   height: 25px;
 }
 
-#logo {
+#yelpLogo {
   width: 100px;
+}
+
+.map-content-wrapper {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
