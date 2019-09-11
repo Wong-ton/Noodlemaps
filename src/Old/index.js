@@ -96,6 +96,16 @@
 //           <Results shops={this.state.shops} coordinates={this.state.centerCoords} hidden={this.state.hidden}/>
 //         </Switch>
 
+        {/* {
+          !this.state.hidden ?
+          <Results shops={this.state.shops} coordinates={this.state.centerCoords} hidden={this.state.hidden}/>
+          : ''
+        } */}
+        {/* <Switch>
+          <Route exact path="/home" render={(props) => <Home {...props} />} />
+          <Results shops={this.state.shops} coordinates={this.state.centerCoords} hidden={this.state.hidden}/>
+        </Switch> */}
+
 //         </div>
 //       )
 //     }
