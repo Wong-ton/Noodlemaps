@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/noodlemaps/static/css/main.661676d4.chunk.css",
+    "main.js": "/noodlemaps/static/js/main.1117bdd0.chunk.js",
+    "main.js.map": "/noodlemaps/static/js/main.1117bdd0.chunk.js.map",
+    "runtime~main.js": "/noodlemaps/static/js/runtime~main.e756bfff.js",
+    "runtime~main.js.map": "/noodlemaps/static/js/runtime~main.e756bfff.js.map",
+    "static/js/2.ce0f7f70.chunk.js": "/noodlemaps/static/js/2.ce0f7f70.chunk.js",
+    "static/js/2.ce0f7f70.chunk.js.map": "/noodlemaps/static/js/2.ce0f7f70.chunk.js.map",
+    "index.html": "/noodlemaps/index.html",
+    "precache-manifest.3f13fcbca71ba4f571bf3dc299e32243.js": "/noodlemaps/precache-manifest.3f13fcbca71ba4f571bf3dc299e32243.js",
+    "service-worker.js": "/noodlemaps/service-worker.js",
+    "static/css/main.661676d4.chunk.css.map": "/noodlemaps/static/css/main.661676d4.chunk.css.map",
+    "static/media/Yelp_trademark_RGB.png": "/noodlemaps/static/media/Yelp_trademark_RGB.9ea57640.png"
+  }
+}
