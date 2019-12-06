@@ -34,6 +34,7 @@ class Shops extends Component {
                     <h4> based on {shop.review_count} reviews</h4>
                     <img id="yelpLogo" src={require(`../images/logo/Yelp_trademark_RGB.png`)}/>
                   </div>
+                  <hr/>
               </a>
             </div>
           )

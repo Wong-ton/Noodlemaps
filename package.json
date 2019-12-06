@@ -2,7 +2,7 @@
   "name": "final-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wong-ton.github.io/noodlemaps/src",
+  "homepage": "https://wong-ton.github.io/noodlemaps/",
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.1.0",
@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build&&gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
