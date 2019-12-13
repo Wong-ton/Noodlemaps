@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b66f1a6f04e1b6c0f768a9b87b930d1a",
+    "revision": "4a5e7fc76ae1f86fdb1850370be8d67a",
     "url": "/noodlemaps/index.html"
   },
   {
-    "revision": "5cff9d495b7febad9409",
-    "url": "/noodlemaps/static/css/main.661676d4.chunk.css"
+    "revision": "e056d5ddc7fc91b497fe",
+    "url": "/noodlemaps/static/css/main.e9896f76.chunk.css"
   },
   {
     "revision": "4c51b0263ad144a58a23",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noodlemaps/static/js/2.c5aeb9e9.chunk.js.LICENSE"
   },
   {
-    "revision": "5cff9d495b7febad9409",
+    "revision": "e056d5ddc7fc91b497fe",
     "url": "/noodlemaps/static/js/main.3cfd3eb9.chunk.js"
   },
   {
