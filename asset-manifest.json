@@ -1,16 +1,23 @@
 {
   "files": {
     "main.css": "/noodlemaps/static/css/main.661676d4.chunk.css",
-    "main.js": "/noodlemaps/static/js/main.bd5e0a16.chunk.js",
-    "main.js.map": "/noodlemaps/static/js/main.bd5e0a16.chunk.js.map",
-    "runtime~main.js": "/noodlemaps/static/js/runtime~main.e756bfff.js",
-    "runtime~main.js.map": "/noodlemaps/static/js/runtime~main.e756bfff.js.map",
-    "static/js/2.ce0f7f70.chunk.js": "/noodlemaps/static/js/2.ce0f7f70.chunk.js",
-    "static/js/2.ce0f7f70.chunk.js.map": "/noodlemaps/static/js/2.ce0f7f70.chunk.js.map",
+    "main.js": "/noodlemaps/static/js/main.3cfd3eb9.chunk.js",
+    "main.js.map": "/noodlemaps/static/js/main.3cfd3eb9.chunk.js.map",
+    "runtime-main.js": "/noodlemaps/static/js/runtime-main.6c20e997.js",
+    "runtime-main.js.map": "/noodlemaps/static/js/runtime-main.6c20e997.js.map",
+    "static/js/2.c5aeb9e9.chunk.js": "/noodlemaps/static/js/2.c5aeb9e9.chunk.js",
+    "static/js/2.c5aeb9e9.chunk.js.map": "/noodlemaps/static/js/2.c5aeb9e9.chunk.js.map",
     "index.html": "/noodlemaps/index.html",
-    "precache-manifest.3bdb09176cc20d97752a65c987168ad0.js": "/noodlemaps/precache-manifest.3bdb09176cc20d97752a65c987168ad0.js",
+    "precache-manifest.941d60be53ca97e783026b334fb13182.js": "/noodlemaps/precache-manifest.941d60be53ca97e783026b334fb13182.js",
     "service-worker.js": "/noodlemaps/service-worker.js",
     "static/css/main.661676d4.chunk.css.map": "/noodlemaps/static/css/main.661676d4.chunk.css.map",
+    "static/js/2.c5aeb9e9.chunk.js.LICENSE": "/noodlemaps/static/js/2.c5aeb9e9.chunk.js.LICENSE",
     "static/media/Yelp_trademark_RGB.png": "/noodlemaps/static/media/Yelp_trademark_RGB.9ea57640.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c20e997.js",
+    "static/js/2.c5aeb9e9.chunk.js",
+    "static/css/main.661676d4.chunk.css",
+    "static/js/main.3cfd3eb9.chunk.js"
+  ]
 }

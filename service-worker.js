@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/noodlemaps/precache-manifest.3bdb09176cc20d97752a65c987168ad0.js"
+  "/noodlemaps/precache-manifest.941d60be53ca97e783026b334fb13182.js"
 );
 
 self.addEventListener('message', (event) => {
