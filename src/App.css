@@ -38,6 +38,7 @@
   height: 100vh;
   background: url(https://assets3.thrillist.com/v1/image/2718722/size/gn-gift_guide_variable_c_2x.jpg);
   /* background: url(https://assets3.thrillist.com/v1/image/2834790/size/gn-gift_guide_variable_c_2x.jpg); */
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
